@@ -5,6 +5,7 @@
     list-style: none;
     overflow-x: hidden;
 }
+
 body{
   background-color: black;
 }
@@ -21,8 +22,6 @@ body .animation{
   border-radius: 100%;
   float: left;
   margin: 3%;
-  width: auto;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +30,22 @@ body .animation{
   animation: zoom_principal 0.57s infinite;
 }
 
+.anime .anime1{
+  border-radius: 100%;
+  display: flex;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation: fil_de_zoom_principal 2s infinite;
+}
+
 body .autre{
   background-color: rgb(134, 0, 243, 0.5);
   border-radius: 100%;
-  margin: -145px;
-  width: 55px;
-  height: 55px;
+  margin: -9.063rem;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -49,81 +58,80 @@ body .autre{
 @keyframes zoom_principal {
   from,
   to {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
   }
   0%{
     background-color: rgb(134, 0, 243, 0.5);
-    padding: 0px;
+    padding: 0rem;
     border-radius: 100%;
     transform: scale(0.2);
     transition: all 0.1s ease;
-    
   }
   10%{
-    padding: 2px;
+    padding:0.125rem;
     border-radius: 100%;
     background-color: rgb(134, 0, 243,0.45);
     transform: scale(0.4);
     transition: all 0.1s ease;
   }
   20%{
-    padding: 4px;
+    padding:0.25rem;
     border-radius: 100%;
     background-color: rgb(134, 0, 243,0.4);
     transform: scale(0.6);
     transition: all 0.1s ease;
   }
   30%{
-    padding: 6px;
+    padding:0.375rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.35);
     transform: scale(0.8);
     transition: all 0.1s ease;
   }
   40%{
-    padding: 8px;
+    padding:0.5rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.3);
     transform: scale(0.9);
     transition: all 0.1s ease;
   }
   50%{
-    padding: 10px;
+    padding:0.625rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.25);
     transform: scale(0.95);
     transition: all 0.1s ease;
   }
   60%{
-    padding: 12px;
+    padding:0.75rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.2);
     transform: scale(1);
     transition: all 0.1s ease;
   }
   70%{
-    padding: 14px;
+    padding:0.875rem;
     background-color: rgba(134, 0, 243, 0.15);
     transform: scale(1.05);
     transition: all 0.1s ease;
   }
   80%{
-    padding: 16px;
+    padding:1rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.1);
     transform: scale(1.1);
     transition: all 0.1s ease;
   }
   90%{
-    padding: 18px;
+    padding:1.125rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0.5);
     transform: scale(1.15);
     transition: all 0.1s ease;
   }
   100%{
-    padding: 20px;
+    padding:1.25rem;
     border-radius: 100%;
     background-color: rgba(134, 0, 243, 0);
     transform: scale(1.2);
@@ -131,153 +139,135 @@ body .autre{
   }
 }
 
-
 @keyframes zoom_independant {
   from,
   to {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
   0%{
     background-color: rgba(160, 127, 187, 0.5);
-    padding: 0px;
+    padding: 0rem;
     border-radius: 100%;
     transform: scale(0.2);
     transform: trans;
     
   }
   10%{
-    padding: 2px;
+    padding:0.125rem;
     border-radius: 100%;
     background-color: rgb(160, 127, 187,0.45);
     transform: scale(0.4);
   }
   20%{
-    padding: 4px;
+    padding:0.25rem;
     border-radius: 100%;
     background-color: rgb(160, 127, 187,0.4);
     transform: scale(0.6);
   }
   30%{
-    padding: 6px;
+    padding:0.375rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.35);
     transform: scale(0.8);
   }
   40%{
-    padding: 8px;
+    padding:0.5rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.3);
     transform: scale(0.9);
   }
   50%{
-    padding: 10px;
+    padding:0.625rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.25);
     transform: scale(0.95);
   }
   60%{
-    padding: 12px;
+    padding:0.75rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.2);
     transform: scale(1);
   }
   70%{
-    padding: 14px;
+    padding:0.875rem;
     background-color: rgba(160, 127, 187, 0.15);
     transform: scale(1.05);
   }
   80%{
-    padding: 16px;
+    padding:1rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.1);
     transform: scale(1.1);
   }
   90%{
-    padding: 18px;
+    padding:1.125rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0.5);
     transform: scale(1.15);
   }
   100%{
-    padding: 20px;
+    padding:1.25rem;
     border-radius: 100%;
     background-color: rgba(160, 127, 187, 0);
     transform: scale(1.2);
   }
 }
 
-
-.anime .anime1{
-  border-radius: 100%;
-  display: flex;
-  position: absolute;
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation: petit_zoom_transparant 2s infinite;
-}
-
-
-
-@keyframes petit_zoom_transparant {
+@keyframes fil_de_zoom_principal {
   from,
   to {
     background-color: rgb(134, 0, 243);
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
   }
   0%{
-    padding: 0px;
+    padding: 0rem;
     border-radius: 100%;
     transform: scale(1);
     background-color: rgb(134, 0, 243);
   }
   10%{
-    padding: 2px;
+    padding:0.125rem;
     background-color: rgb(134, 0, 243,0.9);
   }
   20%{
-    padding: 4px;
+    padding:0.25rem;
     background-color: rgb(134, 0, 243,0.8);
   }
   30%{
-    padding: 6px;
+    padding:0.375rem;
     background-color: rgba(134, 0, 243, 0.7);
     transform: scale(1.03);
   }
   40%{
-    padding: 8px;
+    padding:0.5rem;
     background-color: rgba(134, 0, 243, 0.6);
   }
   50%{
-    padding: 10px;
+    padding:0.625rem;
     background-color: rgba(134, 0, 243, 0.5);
   }
   60%{
-    padding: 12px;
+    padding:0.75rem;
     background-color: rgba(134, 0, 243, 0.4);
     transform: scale(1.06);
   }
   70%{
-    padding: 14px;
+    padding:0.875rem;
     background-color: rgba(134, 0, 243, 0.3);
   }
   80%{
-    padding: 16px;
+    padding:1rem;
     background-color: rgba(134, 0, 243, 0.2);
   }
   90%{
-    padding: 18px;
+    padding:1.125rem;
     background-color: rgba(134, 0, 243, 0.1);
     transform: scale(1.09);
   }
   100%{
-    padding: 20px;
+    padding:1.25rem;
     background-color: rgba(134, 0, 243, 0);
     transform: scale(1.11);
   }
@@ -287,22 +277,21 @@ body .autre{
   top: 55%;
   left: 1%;
   right: 1%;
-  margin: 100px;
+  margin:6.25rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   position: fixed;
   font-family:'Arial Narrow Bold', sans-serif;
   font-style:inherit;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: rgb(138, 44, 226);
   font-weight: 600;
 }
 
 .NaN{
-  margin: 0px 10px;
+  margin: 0rem 0.625rem;
 }
 
 #n1{
@@ -326,11 +315,11 @@ body .autre{
 @keyframes translation_n1{
   from,
   to {
-    transform: translateX(0px);
+    transform: translateX(0rem);
     opacity:0;
   }
   0%{
-    transform: translateX(-200px);
+    transform: translateX(-12.5rem);
     opacity:0.05;
   }
   10%{
@@ -364,44 +353,15 @@ body .autre{
     opacity:1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes translation_n2{
   from,
   to {
-    transform: translateX(0px);
+    transform: translateX(0rem);
     opacity:0;
   }
   0%{
-    transform: translateX(200px);
+    transform: translateX(12.5rem);
     opacity:0.05;
   }
   10%{
@@ -435,7 +395,6 @@ body .autre{
     opacity:1;
   }
 }
-
 
 @keyframes translation_a{
   from,
@@ -474,5 +433,472 @@ body .autre{
   }
   100%{
     opacity:1;
+  }
+}
+
+@media screen and (max-width: 160rem) {
+  .nan{
+    top: 32%;
+    left: 1%;
+    right: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 90rem) {
+  .nan{
+    top: 55%;
+    left: 1%;
+    right: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  .nan{
+    top: 70%;
+    left: 1%;
+    right: 1%;
+    margin: 0 0.313rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .nan{
+    top: 70%;
+    left: 1%;
+    right: 1%;
+    margin: 0 0.313rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+
+  @keyframes zoom_principal {
+    from,
+    to {
+      width: 19.125rem;
+      height: 19.125rem;
+    }
+    0%{
+      background-color: rgb(134, 0, 243, 0.5);
+      padding: 0rem;
+      border-radius: 100%;
+      transform: scale(0.2);
+      transition: all 0.1s ease;
+    }
+    10%{
+      padding:0.125rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.45);
+      transform: scale(0.4);
+      transition: all 0.1s ease;
+    }
+    20%{
+      padding:0.25rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.4);
+      transform: scale(0.6);
+      transition: all 0.1s ease;
+    }
+    30%{
+      padding:0.375rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.35);
+      transform: scale(0.8);
+      transition: all 0.1s ease;
+    }
+    40%{
+      padding:0.5rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.3);
+      transform: scale(0.9);
+      transition: all 0.1s ease;
+    }
+    50%{
+      padding:0.625rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.25);
+      transform: scale(0.95);
+      transition: all 0.1s ease;
+    }
+    60%{
+      padding:0.75rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.2);
+      transform: scale(1);
+      transition: all 0.1s ease;
+    }
+    70%{
+      padding:0.875rem;
+      background-color: rgba(134, 0, 243, 0.15);
+      transform: scale(1.05);
+      transition: all 0.1s ease;
+    }
+    80%{
+      padding:1rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.1);
+      transform: scale(1.1);
+      transition: all 0.1s ease;
+    }
+    90%{
+      padding:1.125rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.5);
+      transform: scale(1.15);
+      transition: all 0.1s ease;
+    }
+    100%{
+      padding:1.25rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0);
+      transform: scale(1.2);
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 26.563rem) {
+  .nan{
+    top: 40%;
+    left: 1%;
+    right: 1%;
+    margin: 0 0.313rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+
+  @keyframes zoom_principal {
+    from,
+    to {
+      width: 10rem;
+      height: 10rem;
+    }
+    0%{
+      background-color: rgb(134, 0, 243, 0.5);
+      padding: 0rem;
+      border-radius: 100%;
+      transform: scale(0.2);
+      transition: all 0.1s ease;
+    }
+    10%{
+      padding:0.125rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.45);
+      transform: scale(0.4);
+      transition: all 0.1s ease;
+    }
+    20%{
+      padding:0.25rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.4);
+      transform: scale(0.6);
+      transition: all 0.1s ease;
+    }
+    30%{
+      padding:0.375rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.35);
+      transform: scale(0.8);
+      transition: all 0.1s ease;
+    }
+    40%{
+      padding:0.5rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.3);
+      transform: scale(0.9);
+      transition: all 0.1s ease;
+    }
+    50%{
+      padding:0.625rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.25);
+      transform: scale(0.95);
+      transition: all 0.1s ease;
+    }
+    60%{
+      padding:0.75rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.2);
+      transform: scale(1);
+      transition: all 0.1s ease;
+    }
+    70%{
+      padding:0.875rem;
+      background-color: rgba(134, 0, 243, 0.15);
+      transform: scale(1.05);
+      transition: all 0.1s ease;
+    }
+    80%{
+      padding:1rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.1);
+      transform: scale(1.1);
+      transition: all 0.1s ease;
+    }
+    90%{
+      padding:1.125rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.5);
+      transform: scale(1.15);
+      transition: all 0.1s ease;
+    }
+    100%{
+      padding:1.25rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0);
+      transform: scale(1.2);
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 23.438rem) {
+  .nan{
+    top: 35%;
+    left: 1%;
+    right: 1%;
+    margin: 0 0.313rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+
+  @keyframes zoom_principal {
+    from,
+    to {
+      width: 9rem;
+      height: 9rem;
+    }
+    0%{
+      background-color: rgb(134, 0, 243, 0.5);
+      padding: 0rem;
+      border-radius: 100%;
+      transform: scale(0.2);
+      transition: all 0.1s ease;
+    }
+    10%{
+      padding:0.125rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.45);
+      transform: scale(0.4);
+      transition: all 0.1s ease;
+    }
+    20%{
+      padding:0.25rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.4);
+      transform: scale(0.6);
+      transition: all 0.1s ease;
+    }
+    30%{
+      padding:0.375rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.35);
+      transform: scale(0.8);
+      transition: all 0.1s ease;
+    }
+    40%{
+      padding:0.5rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.3);
+      transform: scale(0.9);
+      transition: all 0.1s ease;
+    }
+    50%{
+      padding:0.625rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.25);
+      transform: scale(0.95);
+      transition: all 0.1s ease;
+    }
+    60%{
+      padding:0.75rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.2);
+      transform: scale(1);
+      transition: all 0.1s ease;
+    }
+    70%{
+      padding:0.875rem;
+      background-color: rgba(134, 0, 243, 0.15);
+      transform: scale(1.05);
+      transition: all 0.1s ease;
+    }
+    80%{
+      padding:1rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.1);
+      transform: scale(1.1);
+      transition: all 0.1s ease;
+    }
+    90%{
+      padding:1.125rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.5);
+      transform: scale(1.15);
+      transition: all 0.1s ease;
+    }
+    100%{
+      padding:1.25rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0);
+      transform: scale(1.2);
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .nan{
+    top: 30%;
+    left: 1%;
+    right: 1%;
+    margin: 0 0.313rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-style:inherit;
+    font-size: 1.75rem;
+    color: rgb(138, 44, 226);
+    font-weight: 600;
+  }
+
+  @keyframes zoom_principal {
+    from,
+    to {
+      width: 7rem;
+      height: 7rem;
+    }
+    0%{
+      background-color: rgb(134, 0, 243, 0.5);
+      padding: 0rem;
+      border-radius: 100%;
+      transform: scale(0.2);
+      transition: all 0.1s ease;
+    }
+    10%{
+      padding:0.125rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.45);
+      transform: scale(0.4);
+      transition: all 0.1s ease;
+    }
+    20%{
+      padding:0.25rem;
+      border-radius: 100%;
+      background-color: rgb(134, 0, 243,0.4);
+      transform: scale(0.6);
+      transition: all 0.1s ease;
+    }
+    30%{
+      padding:0.375rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.35);
+      transform: scale(0.8);
+      transition: all 0.1s ease;
+    }
+    40%{
+      padding:0.5rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.3);
+      transform: scale(0.9);
+      transition: all 0.1s ease;
+    }
+    50%{
+      padding:0.625rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.25);
+      transform: scale(0.95);
+      transition: all 0.1s ease;
+    }
+    60%{
+      padding:0.75rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.2);
+      transform: scale(1);
+      transition: all 0.1s ease;
+    }
+    70%{
+      padding:0.875rem;
+      background-color: rgba(134, 0, 243, 0.15);
+      transform: scale(1.05);
+      transition: all 0.1s ease;
+    }
+    80%{
+      padding:1rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.1);
+      transform: scale(1.1);
+      transition: all 0.1s ease;
+    }
+    90%{
+      padding:1.125rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0.5);
+      transform: scale(1.15);
+      transition: all 0.1s ease;
+    }
+    100%{
+      padding:1.25rem;
+      border-radius: 100%;
+      background-color: rgba(134, 0, 243, 0);
+      transform: scale(1.2);
+      transition: all 0.1s ease;
+    }
   }
 }
